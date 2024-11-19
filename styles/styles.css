@@ -16,6 +16,7 @@ a {
   text-decoration: none;
 }
 button {
+  transition: all 0.4s ease;
   cursor: pointer;
   border: none;
 }
@@ -88,6 +89,9 @@ nav {
   text-align: left;
   text-transform: uppercase;
 }
+.left_nav p:hover {
+  text-decoration: underline;
+}
 .nav_menu {
   display: flex;
   align-items: center;
@@ -111,6 +115,14 @@ nav {
   text-align: center;
   text-transform: uppercase;
   background: transparent;
+  transition: all 0.4s ease;
+}
+.show_more_btns .donate_btn:hover,
+.donate_btn:hover {
+  transition: all 0.4s ease;
+  color: #fff;
+  background: rgb(235, 97, 82);
+  border-color: transparent;
 }
 
 .next_btn {
@@ -120,9 +132,20 @@ nav {
   background: rgb(217, 70, 54);
   display: flex;
   align-items: center;
+  transition: all 0.4s ease;
   justify-content: center;
 }
 
+.blocks_titles .next_btn:hover {
+  transition: all 0.4s ease;
+  background: rgb(255, 185, 115);
+}
+.next_btn:hover {
+  transition: all 0.4s ease;
+
+  background: rgb(235, 97, 82);
+  border-color: transparent;
+}
 .header_text {
   padding: 100px 0 145px;
 }
@@ -418,12 +441,16 @@ section {
   background: rgb(217, 70, 54);
   width: 66%;
 }
+.btm_donate_block_btns button:nth-child(1):hover {
+  background: rgb(235, 97, 82);
+}
 .btm_donate_block_btns button:nth-child(2) {
-  background: rgb(217, 70, 54);
   width: 34%;
   background: rgb(250, 162, 75);
 }
-
+.btm_donate_block_btns button:nth-child(2):hover {
+  background: rgb(255, 185, 115);
+}
 footer {
   padding: 120px 0 80px;
   border-radius: 60px;
@@ -472,6 +499,11 @@ footer {
   letter-spacing: -2%;
   text-align: left;
   text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+.footer_top_right a:hover {
+  transition: all 0.4s ease;
+  color: rgb(217, 70, 54);
 }
 .footer_top_right div:last-child {
   margin-top: 36px;
@@ -499,6 +531,9 @@ footer {
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
+}
+.footer_btm_menu p:hover {
+  text-decoration: underline;
 }
 .footer_logo {
   margin-right: 50px;
@@ -555,9 +590,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
+}
+.pagination_btn:hover {
+  transition: all 0.4s ease;
+  border: 1px solid rgb(250, 162, 75);
 }
 
 .pagination_btn p {
+  transition: all 0.4s ease;
   /* h6 */
   color: rgb(105, 120, 128);
   font-family: Alumni Sans;
@@ -567,6 +608,10 @@ footer {
   letter-spacing: -2%;
   text-align: center;
   text-transform: uppercase;
+}
+.pagination_btn:hover p {
+  transition: all 0.4s ease;
+  color: rgb(250, 162, 75);
 }
 
 .active_pagination_btn {
@@ -931,4 +976,158 @@ footer {
   position: absolute;
   right: 28px;
   top: 24px;
+}
+.payment_types {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.payment_type {
+  border-top: 2px solid rgb(184, 201, 209);
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.payment_type:hover {
+  border-top: 2px solid rgb(217, 70, 54);
+  transition: all 0.4s ease;
+}
+.payment_type_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.payment_type_item p {
+  /* des_bold */
+  color: #697880;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+  transition: all 0.4s ease;
+  text-align: left;
+}
+.payment_type:hover p {
+  color: rgb(217, 70, 54);
+  transition: all 0.4s ease;
+}
+
+.payment_type .payment_type_tr {
+  visibility: hidden;
+  margin-bottom: 8px;
+}
+.active_payment_type {
+  border-top: 2px solid rgb(217, 70, 54);
+}
+.active_payment_type p {
+  color: rgb(217, 70, 54);
+}
+.active_payment_type svg * {
+  fill: rgb(217, 70, 54);
+}
+.payment_type svg {
+  transition: all 0.4s ease;
+}
+.payment_type:hover svg * {
+  transition: all 0.4s ease;
+  fill: rgb(217, 70, 54);
+}
+.active_payment_type .payment_type_tr {
+  visibility: visible;
+}
+
+.payment_form input {
+  box-sizing: border-box;
+  /* sep */
+  border: 1px solid rgb(184, 201, 209);
+  border-radius: 28px;
+  padding: 0px 24px 0px 24px;
+  height: 72px;
+  width: 100%;
+  background: transparent; /* p_medium */
+  color: rgb(105, 120, 128);
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+  transition: all 0.4s ease;
+}
+.payment_form input:focus {
+  border: 1px solid rgb(250, 162, 75);
+}
+
+.payment_form_card_desc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.payment_form_card_desc input:first-child {
+  width: 60%;
+}
+.payment_form_card_desc input:last-child {
+  width: 40%;
+}
+.form_btns {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+}
+.form_btns .donate_btn {
+  width: 85%;
+  background: rgb(217, 70, 54);
+  color: #fff;
+  border: none;
+  height: 72px;
+}
+.form_btns .next_btn {
+  width: 15%;
+}
+
+.modal_donate_right_exit img {
+  cursor: pointer;
+}
+
+.overlay {
+  transition: all 0.4s ease;
+  transform: translateY(-100%);
+}
+.overlay_visible {
+  transition: all 0.4s ease;
+  transform: translateY(0);
+}
+
+.modal_donate_left .programm_card_desc p {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 90%;
+}
+.modal_donate_left .programm_card_desc {
+  padding: 22px;
+}
+.modal_donate_left .programm_card_desc span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.modal_donate_left .summ_input p {
+  /* des */
+  color: rgb(15, 31, 38);
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: none;
 }
