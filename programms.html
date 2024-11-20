@@ -109,7 +109,7 @@
 
     <section class="container">
       <div class="programms_list">
-        <div class="programm_card donation">
+        <div class="programm_card donation" onclick="toggleModal2()">
           <div class="programm_card_desc">
             <p>Не знаете в какую программу пожертвовать?</p>
             <span
@@ -128,7 +128,27 @@
           </div>
         </div>
 
-        <div class="programm_card">
+        <div class="programm_card" onclick="toggleModal1()">
+          <div class="programm_card_img">
+            <img src="./assets/images/porgramm.png" alt="" />
+          </div>
+          <div class="programm_card_desc">
+            <p>Детские дома</p>
+            <span
+              >Давайте поможем малышам расти и улыбаться! Давайте сделаем вклад
+              в благотворительность сегодня и дадим им светлое будущее.</span
+            >
+          </div>
+          <div class="right_nav show_more_btns">
+            <button class="donate_btn" >
+              Пожертвовать
+            </button>
+            <button class="next_btn" >
+              <img src="./assets/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="programm_card" onclick="toggleModal1()">
           <div class="programm_card_img">
             <img src="./assets/images/porgramm.png" alt="" />
           </div>
@@ -148,27 +168,7 @@
             </button>
           </div>
         </div>
-        <div class="programm_card">
-          <div class="programm_card_img">
-            <img src="./assets/images/porgramm.png" alt="" />
-          </div>
-          <div class="programm_card_desc">
-            <p>Детские дома</p>
-            <span
-              >Давайте поможем малышам расти и улыбаться! Давайте сделаем вклад
-              в благотворительность сегодня и дадим им светлое будущее.</span
-            >
-          </div>
-          <div class="right_nav show_more_btns">
-            <button class="donate_btn" onclick="toggleModal1()">
-              Пожертвовать
-            </button>
-            <button class="next_btn" onclick="toggleModal1()">
-              <img src="./assets/icons/arrow-right.svg" alt="" />
-            </button>
-          </div>
-        </div>
-        <div class="programm_card">
+        <div class="programm_card" onclick="toggleModal1()">
           <div class="programm_card_img">
             <img src="./assets/images/porgramm.png" alt="" />
           </div>
@@ -186,7 +186,7 @@
             </button>
           </div>
         </div>
-        <div class="programm_card">
+        <div class="programm_card" onclick="toggleModal1()">
           <div class="programm_card_img">
             <img src="./assets/images/porgramm.png" alt="" />
           </div>
@@ -204,7 +204,7 @@
             </button>
           </div>
         </div>
-        <div class="programm_card">
+        <div class="programm_card" onclick="toggleModal1()">
           <div class="programm_card_img">
             <img src="./assets/images/porgramm.png" alt="" />
           </div>
@@ -412,9 +412,9 @@
       </div>
     </footer>
 
-    <div class="overlay modal1">
+    <div class="overlay modal1" onclick="toggleModal1()">
       <div class="modal_donate_wrapper">
-        <div class="modal_donate">
+        <div class="modal_donate" onclick="event.stopPropagation()">
           <div class="programm_card modal_donate_left">
             <div class="programm_card_img">
               <img src="./assets/images/porgramm.png" alt="" />
@@ -537,9 +537,9 @@
       </div>
     </div>
 
-    <div class="overlay modal2">
+    <div class="overlay modal2"  onclick="toggleModal2()">
       <div class="modal_donate_wrapper">
-        <div class="modal_donate">
+        <div class="modal_donate" onclick="event.stopPropagation()">
           <div class="programm_card modal_donate_left">
             <div class="programm_card_img">
               <img src="./assets/images/porgramm2.png" alt="" />
