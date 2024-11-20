@@ -12,6 +12,9 @@
         <nav>
           <div class="nav_wrapper">
             <div class="left_nav">
+              <div class="mob_menu_btn" onclick="toggleModal()">
+                <img src="./assets/icons/burger.svg" alt="" />
+              </div>
               <a href="./index.html">
                 <img src="./assets/logo.svg" alt="" />
               </a>
@@ -32,6 +35,52 @@
               </button>
             </div>
           </div>
+          <div class="mob_menu_overlay" onclick="toggleModal()">
+            <div class="mob_menu" onclick="event.stopPropagation()">
+              <div class="nav_wrapper">
+                <div class="left_nav">
+                  <div class="mob_menu_btn" onclick="toggleModal()">
+                    <img src="./assets/icons/exit-menu.svg" alt="" />
+                  </div>
+                  <a href="./index.html">
+                    <img src="./assets/logo.svg" alt="" />
+                  </a>
+                  <div class="nav_lang">
+                    <p>Ru</p>
+                  </div>
+                  <div class="nav_menu">
+                    <a href="./programms.html"><p>наши программы</p></a>
+                    <a href="#"><p>Рейтинг</p></a>
+                    <a href="./news.html"><p>Новости</p></a>
+                    <a href="./contacts.html"><p>Контакты</p></a>
+                  </div>
+                </div>
+                <div class="right_nav">
+                  <button class="donate_btn">Пожертвовать</button>
+                  <button class="next_btn">
+                    <img src="./assets/icons/arrow-right.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="nav_menu">
+                <a href="./programms.html"><p>наши программы</p></a>
+                <a href="#"><p>Рейтинг</p></a>
+                <a href="./news.html"><p>Новости</p></a>
+                <a href="./contacts.html"><p>Контакты</p></a>
+              </div>
+              <div class="mob_langs">
+                <p>Ru</p>
+                <p>EN</p>
+              </div>
+            </div>
+          </div>
+          <script>
+            function toggleModal() {
+              document
+                .querySelector(".mob_menu_overlay")
+                .classList.toggle("mob_menu_overlay_visible");
+            }
+          </script>
         </nav>
         <div class="header_text container">
           <h1>Пожертвования, даже небольшие, могут принести больше</h1>
@@ -253,7 +302,7 @@
             </a>
             <a href="#"><p>наши программы</p></a>
             <a href="#"><p>Рейтинг</p></a>
-         <a href="./news.html"><p>Новости</p></a>
+            <a href="./news.html"><p>Новости</p></a>
             <a href="./contacts.html"><p>Контакты</p></a>
           </div>
           <div class="footer_donate show_more_btns">
