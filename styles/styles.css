@@ -372,17 +372,18 @@ section {
   transition: all 0.4s ease;
 }
 
-.news_card{
-  transition: all 0.4s ease;
-
-}
-.programm_card:hover, .news_card:hover {
-  -webkit-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.39);
-  -moz-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.39);
-  box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.39);
+.news_card {
   transition: all 0.4s ease;
 }
-.programm_card_img, .news_card_img {
+.programm_card:hover,
+.news_card:hover {
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.39);
+  transition: all 0.4s ease;
+}
+.programm_card_img,
+.news_card_img {
   overflow: hidden;
   border-radius: 28px;
 }
@@ -392,11 +393,13 @@ section {
 .news_card_desc {
   width: 60%;
 }
-.programm_card_img img, .news_card_img img {
+.programm_card_img img,
+.news_card_img img {
   transition: all 1s ease;
   width: 100%;
 }
-.programm_card:hover .programm_card_img img, .news_card:hover .news_card_img img  {
+.programm_card:hover .programm_card_img img,
+.news_card:hover .news_card_img img {
   transition: all 1s ease;
   transform: scale(1.1);
 }
@@ -847,7 +850,7 @@ footer {
 }
 .news_content_link_items a:hover {
   transition: all 0.4s ease;
-opacity: 0.7;
+  opacity: 0.7;
 }
 .news_card {
   cursor: pointer;
@@ -995,7 +998,13 @@ opacity: 0.7;
   justify-content: space-between;
   gap: 8px;
 }
-
+.active_pagination_btn:hover {
+  border: none;
+  color: #fff !important;
+}
+.active_pagination_btn:hover p {
+  color: #fff !important;
+}
 .modal_donate_right h2 {
   /* h3 */
   font-family: Alumni Sans;
