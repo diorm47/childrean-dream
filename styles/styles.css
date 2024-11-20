@@ -79,14 +79,16 @@ nav {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.left_nav p {
+.left_nav p,
+.lang_button,
+.lang_dropdown li {
   color: rgb(255, 255, 255);
   font-family: Alumni Sans;
   font-size: 28px;
   font-weight: 600;
   line-height: 34px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
 }
 .left_nav p:hover {
@@ -1202,6 +1204,52 @@ footer {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
+}
+.mob_langs p:hover {
+  text-decoration: underline;
+}
+
+.nav_lang {
+  position: relative;
+  display: inline-block;
+}
+
+.lang_button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.lang_dropdown {
+  display: none;
+  border-radius: 0 0 24px 24px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.2);
+  width: 60px;
+  padding-bottom: 10px;
+}
+
+.lang_dropdown li {
+  cursor: pointer;
+}
+
+.nav_lang.active .lang_dropdown {
+  display: block;
+}
+.nav_lang.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.nav_lang.active .lang_button {
+  text-decoration: underline;
+}
+.secondary_nav .lang_dropdown {
+  background: rgb(218, 231, 240);
+}
+.secondary_nav .lang_button,
+.secondary_nav .lang_dropdown li {
+  color: rgb(105, 120, 128);
 }
 
 @media only screen and (max-width: 1450px) {
