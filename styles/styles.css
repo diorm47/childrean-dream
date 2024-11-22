@@ -474,7 +474,10 @@ section {
 
 .btm_donate_block_btns button:nth-child(1) {
   background: rgb(217, 70, 54);
-  width: 66%;
+  width: 100%;
+}
+.btm_donate_block_btns a:nth-child(1) {
+  width: 100%;
 }
 .btm_donate_block_btns button:nth-child(1):hover {
   background: rgb(235, 97, 82);
