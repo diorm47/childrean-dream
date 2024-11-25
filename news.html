@@ -205,8 +205,9 @@
           </p>
         </div>
         <div class="btm_donate_block_btns container_s">
-          <a href="./donate-sec.html"> <button>Пожертвовать</button></a>
-          <button>Связаться с нами</button>
+          <button onclick="toggleModalPaymnets1()">Пожертвовать</button>
+
+          <button onclick="toggleModalPaymnets3()">Связаться с нами</button>
         </div>
       </div>
     </section>
@@ -254,6 +255,179 @@
         </div>
       </div>
     </footer>
+
+    <!-- modals -->
+    <div class="overlay modal_1" onclick="toggleModalPaymnets1()">
+      <div class="modal_donate_wrapper" onclick="event.stopPropagation()">
+        <div class="modal_donate">
+          <div class="programm_card modal_donate_left">
+            <div class="programm_card_img">
+              <img src="./assets/images/porgramm.png" alt="" />
+            </div>
+            <div class="programm_card_desc">
+              <p>Детские дома</p>
+              <span
+                >Давайте поможем малышам расти и улыбаться! Давайте сделаем
+                вклад в благотворительность сегодня и дадим им светлое
+                будущее.</span
+              >
+
+              <div class="summ_input">
+                <p>
+                  Введите сумму <br />
+                  пожертвования:
+                </p>
+                <input type="text" value="10 $" />
+              </div>
+            </div>
+          </div>
+          <div class="modal_donate_right">
+            <div class="modal_donate_right_exit">
+              <img
+                src="./assets/icons/exit.svg"
+                alt=""
+                onclick="toggleModalPaymnets1()"
+              />
+            </div>
+            <h2>Внести пожертвование на <span>Детские дома</span></h2>
+            <div class="payment_types">
+              <div class="payment_type active_payment_type">
+                <img
+                  class="payment_type_tr"
+                  src="./assets/icons/payment-poly.svg"
+                  alt=""
+                />
+                <div class="payment_type_item">
+                  <svg
+                    width="20.250000"
+                    height="15.750000"
+                    viewBox="0 0 20.25 15.75"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M2.25 0L18 0C19.23 0 20.25 1.01 20.25 2.25L20.25 3.37L0 3.37L0 2.25C0 1.01 0.98 0 2.25 0ZM20.25 6.75L20.25 13.5C20.25 14.76 19.23 15.75 18 15.75L2.25 15.75C0.98 15.75 0 14.76 0 13.5L0 6.75L20.25 6.75ZM3.93 11.25C3.62 11.25 3.37 11.53 3.37 11.81C3.37 12.12 3.62 12.37 3.93 12.37L6.18 12.37C6.46 12.37 6.75 12.12 6.75 11.81C6.75 11.53 6.46 11.25 6.18 11.25L3.93 11.25ZM7.87 11.81C7.87 12.12 8.12 12.37 8.43 12.37L12.93 12.37C13.21 12.37 13.5 12.12 13.5 11.81C13.5 11.53 13.21 11.25 12.93 11.25L8.43 11.25C8.12 11.25 7.87 11.53 7.87 11.81Z"
+                      fill="#697880"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                  <p>Кредитная карта</p>
+                </div>
+              </div>
+              <div class="payment_type">
+                <img
+                  class="payment_type_tr"
+                  src="./assets/icons/payment-poly.svg"
+                  alt=""
+                />
+                <div class="payment_type_item">
+                  <svg
+                    width="20.250000"
+                    height="15.750000"
+                    viewBox="0 0 20.25 15.75"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M6.53 7.98C6.53 8.4 6.18 8.71 5.76 8.71C5.44 8.71 5.2 8.54 5.2 8.19C5.2 7.76 5.51 7.41 5.97 7.41C6.29 7.41 6.53 7.62 6.53 7.98ZM2.81 6.25L2.63 6.25C2.6 6.25 2.53 6.29 2.53 6.36L2.39 7.31L2.67 7.27C3.05 7.27 3.37 7.24 3.44 6.78C3.51 6.32 3.19 6.25 2.81 6.25ZM12.79 6.25L12.65 6.25C12.58 6.25 12.55 6.29 12.51 6.36L12.37 7.31L12.65 7.27C13.11 7.27 13.42 7.17 13.42 6.64C13.42 6.29 13.11 6.25 12.79 6.25ZM20.25 1.68L20.25 14.06C20.25 15.01 19.47 15.75 18.56 15.75L1.68 15.75C0.73 15.75 0 15.01 0 14.06L0 1.68C0 0.77 0.73 0 1.68 0L18.56 0C19.47 0 20.25 0.77 20.25 1.68ZM4.5 6.46C4.5 5.73 3.93 5.48 3.26 5.48L1.86 5.48C1.79 5.48 1.68 5.55 1.68 5.66L1.12 9.24C1.08 9.31 1.16 9.38 1.23 9.38L1.89 9.38C1.96 9.38 2.07 9.28 2.07 9.17L2.25 8.22C2.28 7.98 2.7 8.08 2.88 8.08C3.86 8.08 4.5 7.48 4.5 6.46ZM7.45 6.78L6.78 6.78C6.64 6.78 6.64 6.96 6.64 7.06C6.43 6.75 6.15 6.71 5.8 6.71C4.95 6.71 4.28 7.45 4.28 8.29C4.28 9 4.71 9.42 5.41 9.42C5.73 9.42 6.11 9.24 6.32 9C6.32 9.07 6.29 9.17 6.29 9.24C6.29 9.31 6.32 9.38 6.39 9.38L7.03 9.38C7.1 9.38 7.2 9.28 7.2 9.17L7.55 6.92C7.59 6.85 7.52 6.78 7.45 6.78ZM8.89 10.23L11.1 6.96C11.14 6.92 11.14 6.92 11.14 6.89C11.14 6.85 11.07 6.78 11.03 6.78L10.33 6.78C10.3 6.78 10.23 6.82 10.19 6.85L9.24 8.22L8.85 6.92C8.85 6.85 8.75 6.78 8.68 6.78L8.01 6.78C7.94 6.78 7.91 6.85 7.91 6.89C7.91 6.92 8.57 8.89 8.64 9.07C8.54 9.21 7.94 10.08 7.94 10.19C7.94 10.26 7.98 10.3 8.05 10.3L8.71 10.3C8.78 10.3 8.85 10.26 8.89 10.23ZM14.48 6.46C14.48 5.73 13.92 5.48 13.25 5.48L11.84 5.48C11.77 5.48 11.67 5.55 11.67 5.66L11.1 9.24C11.1 9.31 11.14 9.38 11.21 9.38L11.91 9.38C11.98 9.38 12.05 9.31 12.05 9.24L12.23 8.22C12.26 7.98 12.69 8.08 12.86 8.08C13.85 8.08 14.48 7.48 14.48 6.46ZM17.43 6.78L16.76 6.78C16.62 6.78 16.62 6.96 16.62 7.06C16.41 6.75 16.13 6.71 15.78 6.71C14.94 6.71 14.27 7.45 14.27 8.29C14.27 9 14.69 9.42 15.39 9.42C15.71 9.42 16.1 9.24 16.31 9C16.31 9.07 16.27 9.17 16.27 9.24C16.27 9.31 16.31 9.38 16.38 9.38L17.01 9.38C17.08 9.38 17.19 9.28 17.19 9.17L17.54 6.92C17.57 6.85 17.5 6.78 17.43 6.78ZM19.12 5.58C19.12 5.51 19.05 5.48 18.98 5.48L18.35 5.48C18.28 5.48 18.24 5.51 18.24 5.58L17.64 9.24C17.64 9.31 17.71 9.38 17.78 9.38L18.35 9.38C18.45 9.38 18.52 9.28 18.52 9.17L19.12 5.62L19.12 5.58ZM15.96 7.41C15.5 7.41 15.18 7.76 15.18 8.19C15.18 8.54 15.43 8.71 15.75 8.71C16.17 8.71 16.52 8.4 16.52 7.98C16.52 7.62 16.27 7.41 15.96 7.41Z"
+                      fill="#697880"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+
+                  <p>PayPal</p>
+                </div>
+              </div>
+              <div class="payment_type">
+                <img
+                  class="payment_type_tr"
+                  src="./assets/icons/payment-poly.svg"
+                  alt=""
+                />
+                <div class="payment_type_item">
+                  <p>Другие системы</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="payment_form">
+              <input type="text" placeholder="Номер карты" />
+              <div class="payment_form_card_desc">
+                <input type="text" placeholder="MM/YY" />
+                <input type="text" placeholder="CVV" />
+              </div>
+
+              <input type="text" placeholder="Ваше полное имя" />
+              <input type="email" placeholder="Ваш E-mail" />
+
+              <div class="form_btns show_more_btns">
+                <button class="donate_btn">Пожертвовать</button>
+                <button class="next_btn">
+                  <img src="./assets/icons/arrow-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay modal_3" onclick="toggleModalPaymnets3()">
+      <div class="modal_donate_wrapper" onclick="event.stopPropagation()">
+        <div class="modal_donate modal_donate_sec">
+          <div class="modal_donate_right">
+            <div class="modal_donate_right_exit">
+              <img
+                src="./assets/icons/exit.svg"
+                alt=""
+                onclick="toggleModalPaymnets3()"
+              />
+            </div>
+            <div class="modal_donate_sec_title">
+              <h2>Связаться с нами</h2>
+              <p>
+                Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
+                и ответит на все интересующие вопросы.
+              </p>
+            </div>
+
+            <div class="payment_form contact_form">
+              <input type="text" placeholder="Имя" />
+              <input type="email" placeholder="E-mail" />
+              <input type="text" placeholder="+7 (___) ___-__-__" />
+
+              <textarea placeholder="Вопрос"></textarea>
+
+              <div class="form_btns show_more_btns contact_form_btns">
+                <button class="donate_btn">Отправить</button>
+                <button class="next_btn">
+                  <img src="./assets/icons/arrow-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleModalPaymnets1() {
+        document.querySelector(".modal_1").classList.toggle("overlay_visible");
+      }
+
+      function toggleModalPaymnets3() {
+        document.querySelector(".modal_3").classList.toggle("overlay_visible");
+      }
+    </script>
     <script src="./scripts/main.js"></script>
     <script>
       // Получаем все элементы с классом "news_card"
