@@ -25,3 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const paymentGroups = document.querySelectorAll(".payment_types");
+
+paymentGroups.forEach((group) => {
+  const buttons = group.querySelectorAll(".payment_type");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      buttons.forEach((btn) => btn.classList.remove("active_payment_type"));
+      button.classList.add("active_payment_type");
+    });
+  });
+});
